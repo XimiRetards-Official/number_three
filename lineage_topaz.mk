@@ -21,3 +21,11 @@ PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 12 4G
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Rising Official
+RISING_MAINTAINER := Joaquin
+TARGET_ENABLE_BLUR := true
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RISING_CHIPSET="Snapdragon 685" \
+    RISING_MAINTAINER="John Reybel Pilon"
