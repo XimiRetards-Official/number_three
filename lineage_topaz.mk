@@ -22,10 +22,23 @@ PRODUCT_MODEL := Redmi Note 12 4G
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
+WITH_GMS := true
+TARGET_CORE_GMS := true
+
 # Rising Official
 RISING_MAINTAINER=Joaquin
 TARGET_ENABLE_BLUR := true
+PRODUCT_NO_CAMERA := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     RISING_CHIPSET="Snapdragon 685" \
     RISING_MAINTAINER="John Reybel Pilon"
+
+PRODUCT_PACKAGES += \
+    Photos \
+    MarkupGoogle \
+    LatinIMEGooglePrebuilt \
+    PrebuiltDeskClockGoogle \
+    CalculatorGooglePrebuilt \
+    CalendarGooglePrebuilt
